@@ -1,0 +1,18 @@
+{
+  "name": "tc-homework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Danylo Hordon",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-validator": "^6.13.0",
+    "http-errors": "^1.8.0",
+    "mongoose": "^5.11.15",
+    "mongoose-unique-validator": "^3.0.0"
+  }
+}
