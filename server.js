@@ -25,7 +25,7 @@ app.use(logger);
 app.use('/authors', authorsRouter);
 
 app.use((req, res, next) => {
-  next(createError(404, `${req.originalUrl} not found.`));
+  next(createError(404, `[${req.method}]: ${req.originalUrl} not found.`));
 })
 
 app.use(errorHandler);

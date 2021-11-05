@@ -18,7 +18,7 @@ router.route('/:authorId/posts')
   .get(controller.getAllAuthorPost)
   .post(validator.validatePostCreate, controller.createPost);
 
-router.route('/:authorId/posts/:id')
+router.route('/:authorId/posts/:postId')
   .get(controller.getPostById)
   .delete(controller.removePostById);
 
